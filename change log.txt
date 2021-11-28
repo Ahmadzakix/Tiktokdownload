@@ -1,0 +1,27 @@
+______________ V 1.2 _______________
+
+Music download Option added
+Direct download of files added
+footer allignment issue resolved
+
+Changes done in tiktok_custom.js file
+changes done in tiktok_service.php file
+changes done in tiktok_custom.css file
+
+please replace all old files with these above files
+
+new files added downloadmusic.php and downloadvideo.php
+these files are used for direct download of music and video
+
+______________ V 1.1 _______________
+
+Added without watermark video download
+
+Changes done in tiktok_custom.js file
+changes done in tiktok_service.php file
+changes done in tiktok_custom.css file
+changes done in index.html file
+
+please replace all old files with these new files
+
+_____________________________________

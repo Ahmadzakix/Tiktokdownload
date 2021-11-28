@@ -1,0 +1,339 @@
+/* CSS Document */
+
+/*
+	Name: Tik Tok Downloader 2020
+	Description: Tik Tok Video Downloader
+	Version: 1.2
+	Author: hardikforall
+
+*/
+
+/* ---------------------------------------- */
+/*             TABLE OF CONTENTS
+/* ---------------------------------------- */
+/*   01 - General & Basic Styles			*/
+/*   02 - Navbar							*/
+/*   03 - content							*/
+/*   04 - footer							*/
+
+
+
+/*-----------General & Basic Styles------------*/
+body,
+html {
+    margin: 0;
+    padding: 0;
+    background: #fafafa;
+
+}
+* {
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+a {
+    text-decoration: none;
+    color: #262626;
+}
+a:hover {
+    cursor: pointer;
+    cursor: hand;
+    text-decoration: none;
+}
+
+/*-----------Navbar------------*/
+
+.navbar {
+    z-index: 16;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    -webkit-transition: all .2s ease;
+    -o-transition: all .2s ease;
+    transition: all .2s ease;
+    height: 77px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    border-bottom: 1px solid transparent;
+}
+.navscroll {
+    background-color: white;
+    border-bottom: 1px solid #e6e6e6;
+    -webkit-box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+    box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.12);
+}
+.navbar a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.navbar a i {
+    font-size: 45px;
+    height: 43px;
+    width: 43px;
+    text-align: center;
+    margin-right: 10px;
+    border-radius: 6px;
+    line-height: 42px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+}
+.instaanim {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg) ;
+    transform: rotate(360deg);
+    color: white;
+    margin-right: 0px;
+   
+	
+}
+.shrink {
+    -webkit-transform: scale(0.8);
+    -ms-transform: scale(0.8);
+    transform: scale(0.8);
+}
+.navbar span {
+   background: url("../img/tiktokname.svg") no-repeat;
+height: 40px;
+width: 150px;
+display: inline-block;
+-webkit-transition: .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+-o-transition: .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+transition: .3s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+background-size: contain;
+	
+}
+.navbar a i {
+   background: url("../img/tiktokicon.svg") no-repeat;
+height: 40px;
+width: 40px;
+display: inline-block;
+background-size: contain;
+	
+}
+.lil-bar {
+    background: #fff;
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    border: solid 1px #c8d7e1;
+    border-radius: 3px;
+    height: 35px;
+    line-height: 1;
+    z-index: 50000;
+    -webkit-transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    -o-transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+    transition: all 0.2s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+/*-----------content------------*/
+
+.header {
+    margin-top: 200px;
+    margin-bottom: 50px;
+}
+.card {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 10px 0;
+}
+.card h1 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 25px;
+    line-height: 40px;
+    margin: 0 40px 10px;
+    text-align: center;
+    font-weight: 500;
+}
+.card h2 {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 17px;
+    line-height: 20px;
+    margin: 0 40px 10px;
+    text-align: center;
+    color: #999;
+    font-weight: 600;
+}
+.inputform {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+.tiktokinput {
+    width: 100%;
+    border: 1px solid #efefef;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1 0 0;
+    -ms-flex: 1 0 0;
+    flex: 1 0 0px;
+    outline: none;
+    overflow: hidden;
+    padding: 9px 0 7px 8px;
+    text-overflow: ellipsis;
+    background: #fafafa;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    margin-top: 10px;
+}
+.tiktokinput:focus {
+    border: 1px solid #b2b2b2;
+}
+.tiktokbutton {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    background: #fe2c55;
+    border-color: #fe2c55;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.advertisement {
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 10px 0;
+}
+.advertisement p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    font-size: 20px;
+    vertical-align: middle;
+    line-height: 90px;
+    text-align: center;
+    font-weight: 500;
+}
+.resultdiv {
+    margin-top: 25px;
+    background-color: #fff;
+    border: 1px solid #e6e6e6;
+    border-radius: 1px;
+    padding: 10px 0;
+}
+.profileheader {
+    height: 55px;
+    border-bottom: 1px solid #efefef;
+}
+.profilepic {
+    height: 40px;
+    width: 40px;
+    margin-left: 15px;
+    position: absolute;
+}
+.profilename,
+.username {
+    margin-left: 65px;
+    margin-top: 10px;
+}
+.profilename {
+    font-weight: bolder;
+    color: #3d3b3b;
+}
+.downloadimage {
+    width: 100%;
+    height: auto;
+}
+.downloadbutton {
+    cursor: pointer;
+    -webkit-appearance: none;
+    border-radius: 3px;
+    border-style: solid;
+    border-width: 1px;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 30px;
+    outline: none;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    background: #3897f0;
+    border-color: #3897f0;
+    color: #fff;
+    margin-top: 20px;
+    margin-right: 10px;
+    margin-bottom: 30px;
+  padding:10px;
+}
+.downloadmusicbutton{
+	cursor: pointer;
+-webkit-appearance: none;
+border-radius: 3px;
+border-style: solid;
+border-width: 1px;
+font-size: 14px;
+font-weight: 300;
+line-height: 30px;
+outline: none;
+overflow: hidden;
+text-overflow: ellipsis;
+white-space: nowrap;
+background: #3897f0;
+border-color: #3897f0;
+color: #fff;
+margin-top: -9px;
+margin-right: 10px;
+margin-bottom: 30px;
+padding: 8px;
+}
+.downloadmusicbutton:hover {
+    color: #fff;
+}
+.downloadmusicbutton:focus {
+    color: #fff;
+    -webkit-appearance: none;
+}
+.download-info{
+	margin-top: 15px;
+padding-left: 13px;
+}
+.downloadbutton:hover {
+    color: #fff;
+}
+.downloadbutton:focus {
+    color: #fff;
+    -webkit-appearance: none;
+}
+.resultdiv {
+    display: none;
+    margin-bottom: 100px;
+}
+
+/*-----------Footer------------*/
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+    color: #CCC;
+    background-color: #fff;
+    border-top: 1px solid #e6e6e6;
+}
+footer p {
+    padding: 10.5px;
+    margin: 0px;
+    
+}
